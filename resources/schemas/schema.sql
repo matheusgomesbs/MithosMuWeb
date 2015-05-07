@@ -20,8 +20,10 @@ create table mw_services (
     name nvarchar(250) not null,
     service varchar(250) not null,
     active integer not null,
-    parent_id integer,
-    sequence integer not null
+    sequence integer not null,
+    url varchar(250) null,
+    parent_id integer null,
+    allowed integer not null
 );
 
 create table mw_viptype_services (
