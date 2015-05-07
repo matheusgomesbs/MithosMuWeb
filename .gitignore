@@ -2,7 +2,7 @@
 #################################################
 /vendor
 /cache/*
-/config/database.php
+/configs/database.php
 
 # IDE and editor specific files #
 #################################
