@@ -1,0 +1,332 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font: 12px Arial;
+	background: #000000 url(../images/bg.jpg) center top no-repeat;
+	color: #999999;
+}
+
+a {
+	outline: 0;
+	color: #A2A7C9;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	border: none;
+}
+
+ul {
+	list-style: none;
+}
+
+#header_top {
+	height: 22px;
+	background: url(../images/header.jpg);
+}
+
+#header {
+	height: 230px;
+}
+
+#content_top {
+	width: 942px;
+	margin: 0 auto;
+	height: 9px;
+	background: url(../images/content_top.jpg) no-repeat;
+	height: 9px;
+}
+
+#content_header {
+	width: 942px;
+	margin: 0 auto;
+	height: top;
+	text-align: right;
+	padding-top: 3px;
+}
+
+#content {
+	width: 908px;
+	margin: 0 auto;
+	padding: 7px 17px;
+	padding-bottom: 0; overflow : auto;
+	background: url(../images/content.jpg);
+	overflow: auto;
+}
+
+#content_button {
+	width: 942px;
+	margin: 0 auto;
+	height: 7px;
+	background: url(../images/content_button.jpg) no-repeat;
+}
+
+#left,#right {
+	width: 173px;
+	float: left;
+}
+
+#left h1,#right h1,#middle h1 {
+	color: #5782D0;
+	font: normal 15px Candara, Arial;
+	margin-bottom: 5px;
+}
+
+#middle h1 { /*border-bottom: 1px solid #5892D0;*/
+	
+}
+
+#right {
+	
+}
+
+#middle {
+	width: 528px;
+	float: left;
+	padding: 5px;
+	border: 2px dashed #282730;
+	margin: 0 10px;
+	background: #090909
+}
+
+#box {
+	border: 2px dashed #282730;
+	background: #090909;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+#menu {
+	margin: -5px;
+	margin-top: 5px;
+}
+
+#menu ul li {
+	
+}
+
+#menu ul li a {
+	text-decoration: none;
+	color: #999999;
+	padding: 4px 7px;
+	display: block;
+	border-top: 1px solid #282730;
+}
+
+#menu ul li a.first {
+	border-top: 0;
+}
+
+#menu ul li a:hover {
+	background: #111111;
+}
+
+#footer {
+	clear: both;
+	margin: 10px 0;
+	text-align: center;
+}
+
+label {
+	display: block;
+	color: #999999;
+}
+
+.input {
+	padding: 2px;
+	color: #FFFFFF;
+	width: 152px;
+	background: url(../images/input_bg.gif);
+	border: 1px solid #333333;
+	width: 152px;
+}
+
+.logar {
+	background: url(../images/logar.gif) no-repeat;
+	margin-top: 5px;
+	border: 0px;
+	width: 70px;
+	cursor: pointer; height : 20px;
+	display: block;
+	height: 20px
+}
+
+#screenshot {
+	height: 85px;
+	float: left;
+	overflow: hidden;
+}
+
+#sreenshot ul {
+	
+}
+
+#prev {
+	width: 20px;
+	height: 18px;
+	margin-top: 35px;
+	float: left;
+}
+
+#next {
+	width: 15px;
+	height: 18px;
+	margin-top: -78px;
+	float: right;
+}
+
+#sreenshot ul li {
+	display: inline;
+	margin: 5px;
+}
+
+#sreenshot ul li .visit {
+	text-align: center;
+}
+
+.img {
+	border: 1px solid #222222;
+}
+
+.more {
+	float: right;
+	margin-top: -25px;
+	width: 54px;
+	height: 22px;
+	background: url(../images/more.png) no-repeat;
+}
+
+.more:hover {
+	background: url(../images/more_hover.png) no-repeat;
+}
+
+.more a {
+	display: block;
+	color: #000000;
+}
+
+.more a:hover {
+	text-decoration: none;
+}
+
+#notice {
+	margin-bottom: 10px;
+}
+
+#notice ul li {
+	padding: 5px;
+	display: block;
+	border-bottom: 1px solid #33313C;
+}
+
+#notice ul li:hover {
+	background: #111111;
+}
+
+#top5 {
+	
+}
+
+#top5 ul li {
+	overflow: auto;
+	border-bottom: 1px solid #33313C;
+	padding: 3px;
+}
+
+#top5 #avatar {
+	width: 50px;
+	height: 50px;
+	margin-right: 5px; float : left;
+	background: #ffffff;
+	float: left
+}
+
+#top5 .name {
+	font-size: 15px;
+	margin-bottom: 2px;
+	color: #FFFFFF;
+}
+
+#top5 .level {
+	color: #5891D0;
+}
+
+#info {
+	margin: -5px;
+	margin-top: 5px;
+}
+
+#info ul li {
+	padding: 4px 7px;
+	display: block;
+	border-top: 1px solid #282730;
+}
+
+#info ul li:first-child {
+	border-top: none;
+}
+
+.white {
+	color: #FFFFFF;
+}
+
+#bar {
+	width: 155px;
+	height: 10px;
+	border: 2px solid #282828;
+}
+
+#bar #progress {
+	height: 10px;
+	background: #9A9EBF;
+}
+
+#bar #progress span.porcent {
+	float: right;
+	font-size: 8px;
+	color: #000000;
+	margin-right: 5px;
+}
+
+span.online_server {
+	width: 50px;
+	text-align: right;
+	float: right;
+}
+
+#best {
+	overflow: auto;
+	margin-bottom: 10px;
+}
+
+#best #mini_box {
+	padding: 5px;
+	margin-right: 5px;
+	border: 2px solid #1B1A23;
+	width: 114px;
+	float: left;
+	background: #000000;
+}
+
+#best #mini_box_last {
+	padding: 5px;
+	margin-right: 0;
+	border: 2px solid #1B1A23;
+	width: 114px;
+	float: left;
+	background: #000000;
+}
+
+#best #mini_box #avatar, #best #mini_box_last #avatar {
+	width: 100px;
+	height: 120px;
+	margin: 2px 7px;
+	background: #FFFFFF;
+}

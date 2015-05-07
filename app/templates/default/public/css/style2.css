@@ -1,0 +1,538 @@
+/* line 4, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* line 18, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+.bp-reset-element, body, h1, h2, h3, h4, h5, h6, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, blockquote, q, th, td, caption, table,
+div, span, object, iframe, p,
+pre, a, abbr, acronym, address,
+code, del, dfn, em, img,
+dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend,
+caption, tbody, tfoot, thead, tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 21, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote, q {
+  quotes: "" "";
+}
+/* line 67, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+/* line 22, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+th, td, caption {
+  float: none !important;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 24, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 4, ../sass/screen.scss */
+body {
+  font: 11px Arial, Tahoma;
+  background: black url(../images/bg2.jpg) top center no-repeat;
+}
+
+/* line 9, ../sass/screen.scss */
+a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+/* line 13, ../sass/screen.scss */
+a:hover {
+  color: #25992d;
+  text-decoration: underline;
+}
+
+/* line 19, ../sass/screen.scss */
+.wrap {
+  width: 1007px;
+  margin: 0 auto;
+}
+/* line 23, ../sass/screen.scss */
+.wrap .header {
+  height: 250px;
+}
+/* line 27, ../sass/screen.scss */
+.wrap .main {
+  width: 1007px;
+}
+/* line 30, ../sass/screen.scss */
+.wrap .main .top {
+  background: url(../images/bg-main-top.png);
+  position: relative;
+  margin-bottom: -21px;
+  width: 1007px;
+  height: 77px;
+  z-indez: -1;
+}
+/* line 39, ../sass/screen.scss */
+.wrap .main .sidebar {
+  width: 205px;
+}
+/* line 42, ../sass/screen.scss */
+.wrap .main .sidebar .container {
+  position: relative;
+  z-index: 1;
+}
+/* line 47, ../sass/screen.scss */
+.wrap .main .sidebar.left {
+  background: url(../images/bg-sidebar-left.gif);
+  float: left;
+}
+/* line 51, ../sass/screen.scss */
+.wrap .main .sidebar.left .container {
+  margin-left: -2px;
+}
+/* line 54, ../sass/screen.scss */
+.wrap .main .sidebar.left .container h1 {
+  width: 184px;
+  height: 28px;
+  font-size: 12px;
+  position: relative;
+  color: #fff;
+  margin-left: 14px;
+  line-height: 26px;
+  padding-left: 10px;
+  background: url(../images/bg-h1-sidebar-left.png) no-repeat;
+}
+/* line 66, ../sass/screen.scss */
+.wrap .main .sidebar.left .container .box {
+  width: 184px;
+  margin-left: 14px;
+  color: #fff;
+  background: url(../images/bg-box-sidebar-left.gif) repeat-y;
+  margin-bottom: -3px;
+}
+/* line 73, ../sass/screen.scss */
+.wrap .main .sidebar.left .container .box ul {
+  list-style: none;
+}
+/* line 76, ../sass/screen.scss */
+.wrap .main .sidebar.left .container .box ul li {
+  background: url(../images/separator.gif) bottom no-repeat;
+}
+/* line 79, ../sass/screen.scss */
+.wrap .main .sidebar.left .container .box ul li:last-child {
+  background: none;
+}
+/* line 83, ../sass/screen.scss */
+.wrap .main .sidebar.left .container .box ul li a {
+  display: block;
+  background: url(../images/arrow.gif) 0 5px no-repeat;
+  padding: 3px 3px 5px 20px;
+}
+/* line 92, ../sass/screen.scss */
+.wrap .main .sidebar.left .container .box-bottom {
+  height: 7px;
+  width: 184px;
+  margin-left: 14px;
+  background: url(../images/bg-box-bottom-sidebar-left.gif);
+}
+/* line 99, ../sass/screen.scss */
+.wrap .main .sidebar.left .container .space {
+  height: 7px;
+}
+/* line 104, ../sass/screen.scss */
+.wrap .main .sidebar.left .sidebar-bottom {
+  background: url(../images/bg-sidebar-left-bottom.png);
+  height: 10px;
+}
+/* line 110, ../sass/screen.scss */
+.wrap .main .sidebar.right {
+  background: url(../images/bg-sidebar-right.gif);
+  width: 204px;
+  float: right;
+}
+/* line 115, ../sass/screen.scss */
+.wrap .main .sidebar.right .container {
+  margin-left: 7px;
+  position: relative;
+}
+/* line 119, ../sass/screen.scss */
+.wrap .main .sidebar.right .container h1 {
+  background: url(../images/bg-h1-sidebar-right.png) no-repeat;
+  height: 27px;
+  line-height: 27px;
+  color: #fff;
+  font-size: 12px;
+  padding-left: 10px;
+}
+/* line 128, ../sass/screen.scss */
+.wrap .main .sidebar.right .container .box {
+  width: 179px;
+  color: #fff;
+  padding: 0 9px;
+  background: url(../images/bg-box-sidebar-right.gif) repeat-y;
+}
+/* line 134, ../sass/screen.scss */
+.wrap .main .sidebar.right .container .box .login-input {
+  font-size: 10px;
+  height: 15px;
+  background: #08232a;
+  border: 1px solid #41645e;
+  color: #2f606d;
+  margin-bottom: 3px;
+  width: 104px;
+  padding: 1px 3px;
+}
+/* line 145, ../sass/screen.scss */
+.wrap .main .sidebar.right .container .box .login-submit {
+  background: url(../images/go.png) no-repeat;
+  border: none;
+  width: 55px;
+  height: 43px;
+  cursor: pointer;
+  position: absolute;
+  right: 18px;
+  top: 26px;
+}
+/* line 156, ../sass/screen.scss */
+.wrap .main .sidebar.right .container .box ul {
+  list-style: none;
+  width: 165px;
+}
+/* line 160, ../sass/screen.scss */
+.wrap .main .sidebar.right .container .box ul li {
+  padding: 3px;
+  color: #ccc;
+  border-bottom: 1px solid #2d373d;
+}
+/* line 165, ../sass/screen.scss */
+.wrap .main .sidebar.right .container .box ul li span.text {
+  color: #6c8f1b;
+}
+/* line 169, ../sass/screen.scss */
+.wrap .main .sidebar.right .container .box ul li span.online {
+  color: green;
+  float: right;
+}
+/* line 174, ../sass/screen.scss */
+.wrap .main .sidebar.right .container .box ul li span.offline {
+  color: red;
+  float: right;
+}
+/* line 182, ../sass/screen.scss */
+.wrap .main .sidebar.right .container .space {
+  height: 7px;
+}
+/* line 186, ../sass/screen.scss */
+.wrap .main .sidebar.right .container .box-bottom {
+  height: 10px;
+  width: 184px;
+  background: url(../images/bg-box-bottom-sidebar-right.gif);
+}
+/* line 193, ../sass/screen.scss */
+.wrap .main .sidebar.right .sidebar-bottom {
+  background: url(../images/bg-sidebar-right-bottom.png);
+  height: 10px;
+}
+/* line 200, ../sass/screen.scss */
+.wrap .main .content {
+  width: 600px;
+  float: left;
+  margin-left: -2px;
+}
+/* line 205, ../sass/screen.scss */
+.wrap .main .content .container {
+  background: url(../images/bg-content.gif);
+  min-height: 520px;
+}
+/* line 209, ../sass/screen.scss */
+.wrap .main .content .container .c {
+  position: relative;
+  z-index: 10;
+  margin-top: -5px;
+  margin-left: 22px;
+  margin-right: 22px;
+}
+/* line 218, ../sass/screen.scss */
+.wrap .main .content .box {
+  border: 2px solid #55636c;
+  border-top: none;
+  outline: 1px solid #000;
+  outline-top: none;
+  padding: 5px;
+  overflow: auto;
+  margin: 0 2px;
+  background: url(../images/bg-form.gif);
+}
+/* line 229, ../sass/screen.scss */
+.wrap .main .content h1 {
+  height: 30px;
+  margin-bottom: 7px;
+  width: 556px;
+  font-weight: bold;
+  line-height: 30px;
+  padding-left: 30px;
+  color: #fff;
+  background: url(../images/bg-h1-content.png) no-repeat;
+}
+/* line 240, ../sass/screen.scss */
+.wrap .main .content h2 {
+  height: 28px;
+  width: 556px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 28px;
+  padding-left: 10px;
+  color: #fff;
+  background: url(../images/bg-h2-content.png) no-repeat;
+}
+/* line 250, ../sass/screen.scss */
+.wrap .main .content h2.title {
+  margin: 7px 0;
+}
+/* line 255, ../sass/screen.scss */
+.wrap .main .content .content-middle {
+  height: 66px;
+  margin-left: -14px;
+  margin-top: -23px;
+  width: 626px;
+  position: relative;
+  background: url(../images/bg-content-bottom.png);
+}
+
+/* line 270, ../sass/screen.scss */
+table.list {
+  width: 100%;
+}
+/* line 274, ../sass/screen.scss */
+table.list thead tr {
+  background: #505050;
+  color: #fff;
+}
+/* line 278, ../sass/screen.scss */
+table.list thead tr th {
+  padding: 4px;
+}
+/* line 285, ../sass/screen.scss */
+table.list tbody tr {
+  background: #d4c0a1;
+}
+/* line 288, ../sass/screen.scss */
+table.list tbody tr:nth-child(2n) {
+  background: #f1e0c6;
+}
+/* line 292, ../sass/screen.scss */
+table.list tbody tr td {
+  padding: 4px;
+}
+
+/* line 300, ../sass/screen.scss */
+ul.news {
+  margin: 5px 5px;
+}
+
+/* line 304, ../sass/screen.scss */
+ul.news li {
+  padding: 3px 0;
+  display: block;
+  border-top: 1px solid #ccc;
+}
+/* line 309, ../sass/screen.scss */
+ul.news li:first-child {
+  border-top: 0;
+}
+/* line 313, ../sass/screen.scss */
+ul.news li:last-child {
+  border-bottom: 0;
+}
+/* line 317, ../sass/screen.scss */
+ul.news li a {
+  font-size: 14px;
+}
+/* line 321, ../sass/screen.scss */
+ul.news li p {
+  padding: 4px 0 0 0;
+}
+/* line 324, ../sass/screen.scss */
+ul.news li p.date {
+  padding: 0;
+  color: #999;
+  font-size: 9px;
+}
+
+/* line 332, ../sass/screen.scss */
+ul.comments {
+  list-style: none;
+}
+/* line 335, ../sass/screen.scss */
+ul.comments li {
+  overflow: auto;
+  padding: 5px;
+  border-top: 1px solid #ccc;
+}
+/* line 340, ../sass/screen.scss */
+ul.comments li:first-child {
+  border-top: 0;
+}
+/* line 344, ../sass/screen.scss */
+ul.comments li .avatar {
+  width: 95px;
+  height: 115px;
+  float: left;
+}
+/* line 349, ../sass/screen.scss */
+ul.comments li .avatar img {
+  margin: 5px;
+  z-index: -999;
+}
+/* line 355, ../sass/screen.scss */
+ul.comments li .desc {
+  width: 450px;
+  float: left;
+}
+/* line 359, ../sass/screen.scss */
+ul.comments li .desc span.name {
+  color: #b70000;
+  font-size: 13px;
+}
+/* line 364, ../sass/screen.scss */
+ul.comments li .desc span.created {
+  float: right;
+}
+/* line 368, ../sass/screen.scss */
+ul.comments li .desc p {
+  margin-top: 7px;
+}
+
+/* line 375, ../sass/screen.scss */
+.mold {
+  background: url(../images/border-avatar-comment.png) no-repeat;
+  width: 90px;
+  height: 110px;
+  position: absolute;
+}
+
+/* line 383, ../sass/screen.scss */
+.panel-select-characters .box-character {
+  text-align: center;
+  width: 20%;
+  float: left;
+  position: relative;
+}
+/* line 389, ../sass/screen.scss */
+.panel-select-characters .box-character a {
+  display: block;
+}
+
+
+
+
+#products {
+
+}
+
+#products .product {
+padding: 5px;
+width: 117px;
+float: left;
+margin: 5px;
+text-align: center;
+}
+
+#products .product:hover {
+border: 2px solid #115D91;
+margin: 3px;
+background: #333;
+}
+
+#products .product p.image img.round {
+position: absolute;
+}
+
+#products .product p {
+font-weight: bold;
+color: #fff	;
+}
+
+#products .product p.name {
+font-size: 13px;
+margin: 5px 0;
+}
+
+#products .product p.price {
+color: #FDA700;
+}
+
+#products .product a.detail {
+   font-weight: bold;
+   border: 1px solid #1d1d1d;
+   background: #005cff;
+   color: #fff;
+   text-transform: uppercase;
+   font-size: 10px;
+   margin-top: 5px;
+   cursor: pointer;
+   padding: 3px 10px;
+   display: inline-block;
+}
+
+#products .product a.detail:hover {
+   border: 1px solid #000;
+   text-decoration: none;
+}
+
+#product .image {
+float: left;
+width: 140px;
+text-align: center;
+}
+
+#product .image .price {
+font-size: 20px;
+color: #ffcc33;
+}
+
+#product .image img.round {
+position: absolute;
+}
+
+#product .spec {
+width: 405px;
+float: right;
+}
+
+#product .spec p {
+margin: 2px 0;
+}
+
+#product .spec input[type=checkbox] {
+vertical-align: middle;
+}
+
+#product .spec label {
+display: inline-block;
+vertical-align: middle;
+}

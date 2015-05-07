@@ -1,0 +1,38 @@
+@grid-row-width: (@grid-columns * @grid-column-width) + (@grid-gutter-width * (@grid-columns - 1));
+@fluid-grid-column-width: percentage(@grid-column-width/@grid-row-width);
+@fluid-grid-gutter-width: percentage(@grid-gutter-width/@grid-row-width);
+
+.grid {
+    width: 100%;
+    .clearfix();
+
+    .margin-top {
+        margin-top: 10px;
+    }
+    
+    h2.title {
+      width: 263px!important;
+    }
+
+    &:after, &:before {
+        display: table;
+        line-height: 0;
+        content: "";
+    }
+
+    [class*="grid"] {
+        float: left;
+        margin-left: @fluid-grid-gutter-width;
+        *margin-left: @fluid-grid-gutter-width - (.5 / @grid-row-width * 100 * 1%);
+    }
+
+    [class*="grid"]:first-child {
+        margin-left: 0;
+    }
+
+    .controls-row [class*="grid"] + [class*="grid"] {
+        margin-left: @fluid-grid-gutter-width;
+    }
+
+    .spanX (@grid-columns);
+}

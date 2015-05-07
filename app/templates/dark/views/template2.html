@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{$config.info.title}</title>
+    </head>
+    
+    <body>
+        <div class="wrap">
+            <div class="header">
+               
+            </div>
+            <div class="sidebar-left">
+                <h2>Equipe</h2>
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="content">
+                {$content}
+            </div>
+            <div class="sidebar-right">
+                <h2>Servidores</h2>
+                <div class="box">
+                    <ul class="servers">
+                        {foreach from=$servers item=server}
+                            <li>
+                                <span class="name">{$server.name}</span><span class="players">{$server.onlines} / {$server.max}</span>
+                                <div class="progress"><div class="percentage" style="width:{$server.percentage}%"></div></div>
+                            </li>
+                        {/foreach}
+                    </ul>
+                </div>
+                <h2>Informações</h2>
+                <div class="box">
+                    <ul class="list">
+                        <li>Versão: <span class="text">{$config.info.version}</span></li>
+                        <li>Experiência: <span class="text">{$config.info.experience}</span></li>
+                        <li>Drop <span class="text">{$config.info.drop}</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                
+            </div>
+        </div>
+    </body>
+</html>

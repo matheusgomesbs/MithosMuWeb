@@ -1,0 +1,192 @@
+.rankings {
+  
+  .character {
+    position: relative;
+    width: 272px;
+    float: left;
+    height: 88px;
+    padding: 3px;
+    border-bottom: 1px solid #ccc;
+    
+    &.rank-1 {
+      background-image: url(../images/trofeu_ouro.png);
+      background-position: right top;
+      background-repeat: no-repeat;
+    }
+
+    &.rank-2 {
+      background-image: url(../images/trofeu_prata.png);
+      background-position: right top;
+      background-repeat: no-repeat;
+    }
+
+    &.rank-3 {
+      background-image: url(../images/trofeu_bronze.png);
+      background-position: right top;
+      background-repeat: no-repeat;
+    }
+
+    .image {
+      width: 78px;
+      height: 88px;
+      float: left;
+      position: relative;
+      
+      .mold {
+        background-image: url(../images/border-avatar-ranking.png);
+        width: 70px;
+        height: 86px;
+        position: relative;
+        z-index: 10;
+      }
+      
+      img {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+      }
+    }
+    
+    .desc {
+      width: 101px;
+      padding-top: 5px;
+      float: left;
+    }
+    
+    .rank {
+    	position: absolute;
+    	bottom: 5px;
+    	right: 5px;
+    	font-size: 12px;
+      background: #ccc;
+      .border-radius(20px);
+      padding: 4px;
+    }
+    
+    div {
+    	height: 14px;
+    }
+
+    .name {
+    	font-size: 13px;
+    	margin: 0;
+    }
+
+    .class {
+      margin-top: 2px;
+    	font-size: 9px;
+    }
+
+    .resets {
+    	margin: 2px 0;
+    }
+
+    .level {
+      margin: 2px 0 6px;
+      font-size: 14px;
+      color: #5F5F00;
+      font-weight: bold;
+    }
+  }
+  
+}
+
+#rankings .ranking-character div {
+	height: 14px;
+}
+
+#rankings .ranking-character .name {
+	color: #CCCCCC;
+	font-size: 13px;
+	margin: 0;
+}
+
+#rankings .ranking-character .class {
+	font-size: 9px;
+}
+
+#rankings .ranking-character .resets {
+	margin: 2px 0;
+}
+
+#rankings .ranking-character span.bar {
+	height: 8px;
+	width: 60px;
+	display: inline-block;
+	border: 1px solid #111111;
+}
+
+#rankings .ranking-character span.progress {
+	height: 8px;
+	display: inline-block;
+	background: url(../images/on_green.gif) bottom;
+}
+
+#rankings .ranking-character .rank {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	color: #FFFFFF;
+	font-size: 15px;
+}
+
+#rankings .ranking-character .level {
+	
+}
+
+#rankings .ranking-character .status {
+	
+}
+
+#rankings .ranking-character .guild {
+	
+}
+
+#rankings .ranking-guild {
+	position: relative;
+	width: 233px;
+	float: left;
+	height: 70px;
+	margin: 4px;
+	border: 1px solid #000000;
+	padding: 5px;
+	-moz-box-shadow: 0 1px 10px #222222;
+	-webkit-box-shadow: 0 1px 10px #222222;
+	box-shadow: 0 1px 10px #222222;
+}
+
+#rankings .ranking-guild .image {
+	width: 75px;
+	float: left;
+}
+
+#rankings .ranking-guild .desc {
+	width: 158px;
+	float: left;
+}
+
+#rankings .ranking-guild div {
+	height: 14px;
+}
+
+#rankings .ranking-guild .rank {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	color: #FFFFFF;
+	font-size: 15px;
+}
+
+#rankings .ranking-guild .name {
+	color: #CCCCCC;
+	font-size: 13px;
+	margin: 0;
+}
+
+#rankings .ranking-guild .master {
+	font-size: 9px;
+}
+
+#rankings .ranking-guild .count-members {
+	
+}

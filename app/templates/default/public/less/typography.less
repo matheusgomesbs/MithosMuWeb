@@ -1,0 +1,186 @@
+p {
+  margin: 0 0 @base-line-height / 2;
+}
+
+.lead {
+  margin-bottom: @base-line-height;
+  font-size: @font-size * 1.5;
+  font-weight: 200;
+  line-height: @base-line-height * 1.5;
+}
+
+small {
+  font-size: 85%;
+}
+
+strong {
+  font-weight: bold;  
+}
+
+em {
+  font-style: italic;
+}
+
+cite {
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: (@base-line-height / 2) 0;
+  line-height: 1;
+  text-rendering: optimizelegibility;
+  
+  small {
+    font-weight: normal;
+    line-height: 1;
+    color: #999;
+  }
+}
+
+h1 { 
+  font-size: 24px; 
+
+  small {
+    font-size: 16px;
+  }
+}
+
+h2 { 
+  font-size: 18px; 
+
+  small {
+    font-size: 14px;
+  }
+}
+
+h3 { 
+  font-size: 16px; 
+
+  small {
+    font-size: 12px;
+  }
+}
+
+h4 { 
+  font-size: 14px; 
+
+  small {
+    font-size: 12px;
+  }
+}
+
+h5 { 
+  font-size: 12px; 
+}
+
+h6 { 
+  font-size: 10px; 
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0 0 @base-line-height / 2 25px;
+
+  &.reset {
+    margin: 0;
+    list-style-type: none;
+  }
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+li {
+  line-height: @base-line-height;
+}
+
+ul.unstyled, ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+
+dl {
+  margin-bottom: @base-line-height;
+}
+
+dt, dd {
+  line-height: @base-line-height;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: @base-line-height / 2;
+}
+
+hr {
+  margin: @base-line-height 0;
+  border: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff;
+}
+
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #999;
+}
+
+abbr.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 @base-line-height;
+  border-left: 5px solid #eee;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  small {
+    display: block;
+    line-height: @base-line-height;
+    color: #999;
+    &:before {
+      content: '\2014 \00A0';
+    }
+  }
+
+  &.pull-right {
+    float: right;
+    padding-right: 15px;
+    padding-left: 0;
+    border-right: 5px solid #eee;
+    border-left: 0;
+
+    p, small {
+      text-align: right;
+    }
+
+    small {
+      &:before {
+        content: '';
+      }
+
+      &:after {
+        content: '\00A0 \2014';
+      }
+    }
+  }
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: '';
+}
+
+address {
+  display: block;
+  margin-bottom: @base-line-height;
+  font-style: normal;
+  line-height: @base-line-height;
+}

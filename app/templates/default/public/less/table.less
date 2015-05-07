@@ -1,0 +1,28 @@
+table.list {
+  width: 100%;
+  border-collapse: collapse;
+  
+  thead tr {
+    background: #505050;
+    color: #fff;
+    
+    th {
+      text-align: left;
+      padding: 4px;
+    }
+  }
+  
+  tbody tr {
+    
+    td {
+      padding: 4px;
+      background: #d4c0a1;
+    }
+    
+    &:nth-child(2n) {
+      td {
+        background: #f1e0c6;
+      }
+    }
+  }
+}

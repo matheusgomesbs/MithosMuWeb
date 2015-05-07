@@ -1,0 +1,186 @@
+.window_panel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 2000;
+  text-decoration: none;
+  clear: both;
+  overflow: hidden;
+  .box-shadow(0 1px 10px #000);
+  border: 8px solid #157fcc;
+  background: #fff;
+
+  .window_header {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: default;
+    padding: 3px;
+    padding-bottom: 7px;
+    background-color: #157fcc;
+    color: #fff;
+    font-weight: bold;
+
+    .window_title_text {
+      font-size: 12px;
+      overflow: hidden;
+      white-space: nowrap;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      position: absolute;
+      position: relative;
+      float: left;
+      text-transform: uppercase;
+    }
+
+		.window_function_bar {
+			height: 23px;
+			width: 72px;
+			position: absolute;
+			right: 0;
+			top: 0;
+			overflow: hidden;
+			white-space: nowrap;
+		}
+
+		.window_icon_button {
+			width: 20px;
+			height: 20px;
+			z-index: 3200;
+			cursor: pointer;
+			float: right;
+			margin-left: 4px;
+			text-align: center;
+			color: #000;
+			font-size: 14px;
+
+			&:hover {
+			  background-color: #1b6eae;
+			  color: #fff;
+			}
+		}
+
+		.closeImg {
+			background-color: #c75050;
+			color: #fff;
+
+			&:hover {
+				background-color: #e04343;
+			}
+		}
+	}
+
+	.window_header_maximize {
+		text-align: absolute;
+		cursor: default;
+	}
+
+	.window_frame {
+		margin: 0;
+		padding: 0;
+		border: 0;
+
+		.overlay {
+			position: absolute; 
+			left: 0px; 
+			top: 25px; 
+			height: 100%; 
+			width: 100%; 
+			z-index: 99; 
+			background: rgba(255, 255, 255, .5);
+		}
+	}
+}
+
+.window_panel .window_header_normal {
+	text-align: left;
+	cursor: move;
+}
+
+.window_panel .window_header_minimize {
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	padding: 2px 5px;
+	line-height: 20px;
+	text-align: left;
+}
+
+.window_panel .window_header_minimize_vertical {
+	padding: 7px 0px;
+	line-height: 13px;
+	text-align: center;
+}
+
+.window_panel .window_header_minimize .window_title_text {
+  width: 90%!important;
+}
+
+.window_panel .window_footer {
+	width: 100%;
+	height: 16px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-top: 1px solid #aaa;
+	overflow: hidden;
+	font-size: 12px;
+}
+
+.window_panel .window_footer div {
+	margin-left: 5px;
+}
+
+.window_panel .window_header .window_title_icon {
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 4px;
+	top: 4px;
+}
+
+.window_panel .window_header .window_title_text_vertical {
+	left: 20px;
+}
+
+.window_panel .window_header .window_title_text_vertical_with_icon {
+	left: 0;
+	top: 23px;
+}
+
+.window_panel .window_header .bookmarkImg {
+}
+
+.window_panel .window_header .minimizeImg {
+}
+
+.window_panel .window_header .cascadeImg {
+}
+
+.window_panel .window_header .maximizeImg {
+}
+
+.window_panel .frame_loading {
+	background: url('../images/loading.gif') no-repeat;
+  width: 32px;
+  height: 32px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -16px;
+}
+
+#window_overlay {
+	background: black;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+}

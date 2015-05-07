@@ -1,0 +1,44 @@
+.tabs-list {
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  
+  ul {
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    margin: 0;
+    height: 10px;
+  
+    li {
+      display: inline-block;
+      
+      a {
+        margin-right: -5px;
+        #gradient > .vertical(#fff, #eee);
+        border: 1px solid #ccc;
+        padding: 2px 8px;
+        color: #666;
+      }
+      
+      &:first-child {
+        a {
+          .border-radius(10px 0 0 10px);
+        }
+      }
+      
+      &:last-child {
+        a {
+          .border-radius(0 10px 10px 0);
+        }
+      }
+      
+      .active {
+        #gradient > .vertical(#f9f9f9, #d6d6d6);
+      }
+    }
+  }
+}
+
+.tab-content {
+  display: none;
+}
