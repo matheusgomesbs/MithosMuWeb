@@ -33,10 +33,10 @@ return [
     ],
 
     'smtp' => [
-        'host' => 'mail.graficaexpanssiva.com.br',
-        'username' => 'grafica@graficaexpanssiva.com.br',
-        'password' => '%#8S88E8/~#D!e)u#s8!*8T"u+r~i?n<A+.m.o@9r8',
-        'port' => '587',
+        'host' => '',
+        'username' => '',
+        'password' => '',
+        'port' => '',
 //        'secure' => true,
         'from' => ['Flavio' => 'hernandes.flavio@gmail.com']
     ],
