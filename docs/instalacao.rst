@@ -32,7 +32,7 @@ Configurações
 =============
 
 A MithosMuWeb exige para seu funcionamento apenas a configuração do Banco de dados no arquivo
-``/configs/database.php``, o arquivo é bem simples como mostrado a baixo.:
+``/configs/database.php``, o arquivo é bem simples como mostrado a baixo.::
 
     'host' => 'localhost\SQLEXPRESS',
     'username' => 'sa',
@@ -41,6 +41,8 @@ A MithosMuWeb exige para seu funcionamento apenas a configuração do Banco de d
     'driver' => 'Lsw\DoctrinePdoDblib\Doctrine\DBAL\Driver\PDODblib\Driver'
 
 Além do driver dblib, você pode usar os drivers ``pdo_sqlsrv`` e ``sqlsrv``, para utilizar
-basta alterar o valor ``driver``.:
+basta alterar o valor ``driver``.::
 
     'driver' => 'pdo_sqlsrv'
+
+aa
