@@ -25,12 +25,22 @@ para incorporar a MithosMuWeb em qualquer aplicação comercial ou de código fe
 Permissões
 ==========
 
-A MithosMuWeb usa o diretório ``/cache`` para diferentes operações.
+A MithosMuWeb usa o diretório ``/cache`` para diferentes operações, assim,
+tenha certeza que o diretório ``/cache`` permite a escrita pelo usuário do servidor web.
 
-Assim, tenha certeza que o diretório ``/cache`` permite a escrita pelo usuário do servidor web.
-
-Configuração
-============
+Configurações
+=============
 
 A MithosMuWeb exige para seu funcionamento apenas a configuração do Banco de dados no arquivo
-``/configs/database.php``
+``/configs/database.php``, o arquivo é bem simples como mostrado a baixo.
+
+    'host' => 'localhost\SQLEXPRESS',
+    'username' => 'sa',
+    'password' => '',
+    'dbname' => 'MuOnline',
+    'driver' => 'Lsw\DoctrinePdoDblib\Doctrine\DBAL\Driver\PDODblib\Driver'
+
+Além do driver dblib, você pode usar os drivers ``pdo_sqlsrv`` e ``sqlsrv``, para utilizar
+basta alterar o valor ``driver``.
+
+    'driver' => 'pdo_sqlsrv'
