@@ -4,9 +4,6 @@ use Mithos\Slim\Application;
 use Mithos\Core\Config;
 use Mithos\Core\Plugin;
 use Mithos\Database\DriverManager;
-use Mithos\Item\Item;
-use Mithos\Item\Storage\Storage;
-use Mithos\Core\MuVersion;
 use Statical\SlimStatic\SlimStatic;
 
 $loader = require "../vendor/autoload.php";
@@ -88,9 +85,6 @@ $proxys = [
 foreach ($proxys as $alias => $proxy) {
     Statical::addProxyService($alias, $proxy, Container::getInstance(), strtolower($alias));
 }
-
-Item::setStorage(Storage::factory('ItemKOR', '../resources/item.txt'));
-MuVersion::setVersion(MuVersion::V97);
 
 if ($app->inAdmin()) {
     require config('path.admin') . 'bootstrap.php';

@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "74a37d199a64d6bb2b704a538f288e3d",
+    "hash": "1a8db256565aa0913e58b99299d0e080",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -80,12 +80,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "9d141335b758cbff3c58b52777836ce945522a68"
+                "reference": "c2ab51e8f3c4a8170ca91b702e3789881dd2a6c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/9d141335b758cbff3c58b52777836ce945522a68",
-                "reference": "9d141335b758cbff3c58b52777836ce945522a68",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/c2ab51e8f3c4a8170ca91b702e3789881dd2a6c2",
+                "reference": "c2ab51e8f3c4a8170ca91b702e3789881dd2a6c2",
                 "shasum": ""
             },
             "require": {
@@ -142,7 +142,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2015-04-28 19:52:40"
+            "time": "2015-05-07 20:41:18"
         },
         {
             "name": "doctrine/collections",
@@ -539,12 +539,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hernandes/mithos.git",
-                "reference": "e09f2f38fa232369023a77c667e78a8fc5575cca"
+                "reference": "9c44bfd6099de0a5fc2f72533fc9e08ff2438ef8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hernandes/mithos/zipball/e09f2f38fa232369023a77c667e78a8fc5575cca",
-                "reference": "e09f2f38fa232369023a77c667e78a8fc5575cca",
+                "url": "https://api.github.com/repos/hernandes/mithos/zipball/9c44bfd6099de0a5fc2f72533fc9e08ff2438ef8",
+                "reference": "9c44bfd6099de0a5fc2f72533fc9e08ff2438ef8",
                 "shasum": ""
             },
             "require": {
@@ -570,7 +570,7 @@
                 }
             ],
             "description": "Mithos",
-            "time": "2015-04-11 01:12:00"
+            "time": "2015-05-11 16:13:35"
         },
         {
             "name": "leaseweb/doctrine-pdo-dblib",
@@ -637,12 +637,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "adea5c6d601c300c7bda731cf1ea783c22ed404d"
+                "reference": "d2b8b996f34ac0f8da968e9053c32e140d261052"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/adea5c6d601c300c7bda731cf1ea783c22ed404d",
-                "reference": "adea5c6d601c300c7bda731cf1ea783c22ed404d",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/d2b8b996f34ac0f8da968e9053c32e140d261052",
+                "reference": "d2b8b996f34ac0f8da968e9053c32e140d261052",
                 "shasum": ""
             },
             "require": {
@@ -684,7 +684,7 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2015-05-06 22:41:48"
+            "time": "2015-05-11 06:43:33"
         },
         {
             "name": "slim/slim",
@@ -738,12 +738,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/smarty-php/smarty.git",
-                "reference": "37449b2fcb8d1da7749c90e7dc258bd1580a0b0b"
+                "reference": "556185c9e296d727499a997cd7445263820c1b9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/37449b2fcb8d1da7749c90e7dc258bd1580a0b0b",
-                "reference": "37449b2fcb8d1da7749c90e7dc258bd1580a0b0b",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/556185c9e296d727499a997cd7445263820c1b9d",
+                "reference": "556185c9e296d727499a997cd7445263820c1b9d",
                 "shasum": ""
             },
             "require": {
@@ -785,7 +785,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2015-05-07 02:36:49"
+            "time": "2015-05-10 21:17:43"
         },
         {
             "name": "statical/slim-static",
