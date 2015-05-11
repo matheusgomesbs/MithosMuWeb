@@ -37,7 +37,7 @@ return [
         'username' => '',
         'password' => '',
         'port' => '',
-//        'secure' => true,
+        'secure' => false,
         'from' => ['Flavio' => 'hernandes.flavio@gmail.com']
     ],
 

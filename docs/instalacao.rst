@@ -40,7 +40,7 @@ A MithosMuWeb exige para seu funcionamento apenas a configuração do Banco de d
     'dbname' => 'MuOnline',
     'driver' => 'Lsw\DoctrinePdoDblib\Doctrine\DBAL\Driver\PDODblib\Driver'
 
-Além do driver dblib, você pode usar os drivers ``pdo_sqlsrv`` e ``sqlsrv``, para utilizar
+Além do driver dblib, é possivel utilizar outros drivers como ``pdo_sqlsrv`` e ``sqlsrv``, para utilizar
 basta alterar o valor ``driver``::
 
     'driver' => 'pdo_sqlsrv'

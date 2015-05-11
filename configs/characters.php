@@ -11,10 +11,10 @@ return [
         
         'pk_levels' => [
             1 => 'Hero Player 2',
-			2 => 'Hero Player 1',
-			3 => 'Normal',
-			4 => 'Player Killer 1',
-			5 => 'Player Killer 2'
+            2 => 'Hero Player 1',
+            3 => 'Normal',
+            4 => 'Player Killer 1',
+            5 => 'Player Killer 2'
         ],
 
         'classes' => [
