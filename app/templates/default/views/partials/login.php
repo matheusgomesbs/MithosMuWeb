@@ -5,8 +5,8 @@
         <ul>
             <li>Status: <span class="text"><?= util('Account')->vipName(user()->getVipType()) ?></span></li>
             <li>Vencimento: <span class="text"><?= user()->getVipExpire()->format('d/m/Y') ?></span></li>
-            <? foreach (config('coins', []) as $coin): ?>
-                <li><?= $coin['name'] ?>: <span class="text"><?= util('Number')->format(user()->getCoin($coin['column'])) ?></span></li>
+            <? foreach (config('coins', []) as $id => $coin): ?>
+                <li><?= $coin['name'] ?>: <span class="text"><?= util('Number')->format(user()->getCoin($coin['id'])) ?></span></li>
             <? endforeach ?>
         </ul>
 

@@ -18,6 +18,11 @@ Route::map('/coins/add', function () {
         View::display('coins/add');
     } else {
         $validation = new Validation(Input::post(), array(
+            'id' => [
+                __('Campo obrigatório') => [
+                    'rule' => 'notEmpty'
+                ]
+            ],
             'name' => [
                 __('Campo obrigatório') => [
                     'rule' => 'notEmpty'
@@ -43,7 +48,8 @@ Route::map('/coins/add', function () {
         if ($validation->isValid()) {
             $coins = config('coins', []);
 
-            $coins[] = [
+            $coins[Input::post('id')] = [
+                'id' => Input::post('id'),
                 'name' => Input::post('name'),
                 'table' => Input::post('table'),
                 'column' => Input::post('column'),
@@ -72,10 +78,14 @@ Route::map('/coins/edit/:id', function ($id) {
     
     if (Request::isGet()) {
         $coin = $coins[$id];
-        $coin['id'] = $id;
         View::display('coins/edit', compact('coin'));
     } else {
         $validation = new Validation(Input::post(), [
+            'id' => [
+                __('Campo obrigatório') => [
+                    'rule' => 'notEmpty'
+                ]
+            ],
             'name' => [
                 __('Campo obrigatório') => [
                     'rule' => 'notEmpty'
@@ -100,6 +110,7 @@ Route::map('/coins/edit/:id', function ($id) {
     
         if ($validation->isValid()) {
             $coins[$id] = [
+                'id' => Input::post('id'),
                 'name' => Input::post('name'),
                 'table' => Input::post('table'),
                 'column' => Input::post('column'),

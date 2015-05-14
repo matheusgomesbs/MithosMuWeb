@@ -154,6 +154,7 @@ $(function () {
                     });
 
                     w.getContainer().find(".datepicker").datepicker();
+                    w.getContainer().find("input.money").unmaskMoney().maskMoney();
 
                     // tabs
                     w.getContainer().find(".tabs").each(function () {

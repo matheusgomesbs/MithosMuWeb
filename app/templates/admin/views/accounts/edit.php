@@ -44,6 +44,14 @@
                             <a data-window data-window-width="400" title="Bloquear usuário" href="<?= url_to('/admin/accounts/ban/' . $account['username']) ?>"><i class="fa fa-external-link"></i></a>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="label">
+                            <label>Criado em:</label>
+                        </div>
+                        <div class="field readonly">
+                            <?= date('d/m/Y', strtotime($account['createdAt'])) ?>
+                        </div>
+                    </div>
                 </div>
             
                 <div class="grid-6">
@@ -86,6 +94,14 @@
                             <input type="text" id="account-<?= $account['name'] ?>-pid" value="<?= $account['personalId'] ?>" name="pid" />
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="label">
+                            <label for="account-<?= $account['name'] ?>-credit">Créditos (R$):</label>
+                        </div>
+                        <div class="field">
+                            <input type="text" class="money" value="<?= util('Number')->format($account['credit'], 2, ',') ?>" id="account-<?= $account['name'] ?>-credit" name="credit" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </fieldset>
@@ -99,10 +115,10 @@
                         <? foreach (config('coins', []) as $coin): ?>
                             <div class="row">
                                 <div class="label">
-                                    <label><?= $coin['name'] ?>:</label>
+                                    <label for="account-<?= $account['name'] ?>-coin-<?= $coin['id'] ?>"><?= $coin['name'] ?>:</label>
                                 </div>
                                 <div class="field">
-                                    <input type="text" id="account-<?= $account['name'] ?>-coin-<?= $coin['column'] ?>" value="<?= $account['coins'][$coin['column']] ?>" name="coin_<?= $coin['column'] ?>" />
+                                    <input type="text" id="account-<?= $account['name'] ?>-coin-<?= $coin['id'] ?>" value="<?= $account['coins'][$coin['id']] ?>" name="coin_<?= $coin['id'] ?>" />
                                 </div>
                             </div>
                         <? endforeach ?>

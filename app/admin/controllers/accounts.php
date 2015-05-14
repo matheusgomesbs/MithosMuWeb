@@ -87,12 +87,13 @@ Route::map('/accounts/edit/:username', function ($username) {
                         ->setBlocked(Input::post('blocked'))
                         ->setConfirmedEmail(Input::post('confirmed_email'))
                         ->setPersonalId(Input::post('pid'))
+                        ->setCredit(util('Number')->toFloat(Input::post('credit')))
                         ->setVipType(Input::post('vip_type'))
                         ->setVipExpire(!empty($expire) ? DateTime::createFromFormat('d/m/Y', $expire)->format(DateTime::ISO8601) : null);
             
                 $coins = [];
                 foreach (config('coins', []) as $coin) {
-                    $coins[$coin['column']] = Input::post('coin_' . $coin['column']);
+                    $coins[$coin['id']] = Input::post('coin_' . $coin['column']);
                 }
 
                 if (!empty($coins)) {
@@ -108,7 +109,7 @@ Route::map('/accounts/edit/:username', function ($username) {
                 success(__('Usuário %s editado', $username));
 
             } catch (\Exception $ex) {
-                error($ex->getMessage());
+                error($ex->getMessage() . $ex->getLine() . $ex->getFile());
             }
         } else {
             error($validation->getErrors());

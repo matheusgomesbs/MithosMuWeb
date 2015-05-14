@@ -16,7 +16,7 @@
         <? else: ?>
             <? foreach ($accounts as $account): ?>
                 <tr<?= $account['blocked'] ? ' class="error"' : '' ?>>
-                    <td><a data-name="account<?= $account['username'] ?>" title="Usuário: <?= $account['username'] ?>" data-window href="<?= url_to('/admin/accounts/edit/' . $account['username']) ?>"><?= $account['username'] ?></a></td>
+                    <td><a data-name="account<?= $account['username'] ?>" title="Usuário: <?= $account['username'] ?>" data-window data-window-height="500" href="<?= url_to('/admin/accounts/edit/' . $account['username']) ?>"><?= $account['username'] ?></a></td>
                     <td>
                         <? foreach ($account['characters'] as $key => $character): ?>
                             <a data-name="character<?= $character['name'] ?>" title="Personagem: <?= $character['name'] ?>" data-window href="<?= url_to('/admin/characters/edit/' . $character['name']) ?>"><?= $character['name'] ?></a><?= $key + 1 < count($account['characters']) ? ', ' : '' ?>

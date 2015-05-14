@@ -32,18 +32,6 @@ create table mw_viptype_services (
     service_id integer not null
 );
 
-create table mw_news (
-    id integer identity(1, 1) primary key not null,
-    title nvarchar(400) collate Latin1_General_CI_AS not null,
-    slug varchar(400) not null,
-    body ntext collate Latin1_General_CI_AS not null,
-    link nvarchar(400) collate Latin1_General_CI_AS null,
-    create_date datetime default getdate() not null,
-    type varchar(100) not null,
-    views integer default 0 not null,
-    user_id integer
-);
-
 create table mw_users (
     id integer identity(1, 1) primary key not null,
     name nvarchar(100) collate Latin1_General_CI_AS not null,
@@ -58,6 +46,20 @@ create table mw_user_groups (
     id integer identity(1, 1) primary key not null,
     name nvarchar(100) collate Latin1_General_CI_AS not null,
     access text null
+);
+
+
+
+create table mw_news (
+    id integer identity(1, 1) primary key not null,
+    title nvarchar(400) collate Latin1_General_CI_AS not null,
+    slug varchar(400) not null,
+    body ntext collate Latin1_General_CI_AS not null,
+    link nvarchar(400) collate Latin1_General_CI_AS null,
+    create_date datetime default getdate() not null,
+    type varchar(100) not null,
+    views integer default 0 not null,
+    user_id integer
 );
 
 create table mw_helpdesk_tickets (
@@ -77,4 +79,15 @@ create table mw_helpdesk_ticket_messages (
     account varchar(10) not null,
     create_date datetime default getdate() not null,
     ticket_id integer not null
+);
+
+create table mw_packages (
+    id integer identity(1, 1) primary key not null,
+    package nvarchar(200) collate Latin1_General_CI_AS not null,
+    description text,
+    price numeric(10,2) not null,
+    viptype integer,
+    vipdays integer,
+    coins text,
+    active integer not null
 );

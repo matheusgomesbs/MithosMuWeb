@@ -21,6 +21,7 @@
         <script type="text/javascript" src="<?= static_to('/template/admin/js/jquery.data-table.js') ?>"></script>
         <script type="text/javascript" src="<?= static_to('/template/admin/js/notify.js') ?>"></script>
         <script type="text/javascript" src="<?= static_to('/template/admin/js/mithos.js') ?>"></script>
+        <script type="text/javascript" src="<?= static_to('/template/admin/js/jquery.mask-money.js') ?>"></script>
         <script type="text/javascript" src="<?= static_to('/template/admin/js/jquery.window.js') ?>"></script>
         <script type="text/javascript" src="<?= static_to('/template/admin/js/alerts.js') ?>"></script>
         <script type="text/javascript" src="<?= static_to('/template/admin/js/tinymce/tinymce.min.js') ?>"></script>

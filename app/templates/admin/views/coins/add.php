@@ -2,18 +2,26 @@
     <div class="fields">
         <div class="row">
             <div class="label">
-                <label for="downloads-name">Nome: <span class="required">*</span></label>
+                <label for="coins-id">ID: <span class="required">*</span></label>
             </div>
             <div class="field">
-                <input type="text" name="name" id="downloads-name" />
+                <input type="text" name="id" id="coins-id" />
             </div>
         </div>
         <div class="row">
             <div class="label">
-                <label for="downloads-table">Tabela: <span class="required">*</span></label>
+                <label for="coins-name">Nome: <span class="required">*</span></label>
             </div>
             <div class="field">
-                <input type="text" name="table" id="downloads-table" />
+                <input type="text" name="name" id="coins-name" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">
+                <label for="coins-table">Tabela: <span class="required">*</span></label>
+            </div>
+            <div class="field">
+                <input type="text" name="table" id="coins-table" />
             </div>
         </div>
         <div class="row">
@@ -26,10 +34,10 @@
         </div>
         <div class="row">
             <div class="label">
-                <label for="downloads-foreign-key">Coluna (account): <span class="required">*</span></label>
+                <label for="coins-foreign-key">Coluna (account): <span class="required">*</span></label>
             </div>
             <div class="field">
-                <input type="text" name="foreign_key" id="downloads-foreign-key" />
+                <input type="text" name="foreign_key" id="coins-foreign-key" />
             </div>
         </div>
     </div>

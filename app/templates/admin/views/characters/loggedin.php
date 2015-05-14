@@ -32,7 +32,7 @@
                         <? foreach ($characters as $character): ?>
                             <tr>
                                 <td><a data-name="character<?= $character['character'] ?>" title="Personagem: <?= $character['character'] ?>" data-window href="<?= url_to('/admin/characters/edit/' . $character['character']) ?>"><?= $character['character'] ?></a></td>
-                                <td><a data-name="account<?= $character['account'] ?>" title="Usuário: <?= $character['account'] ?>" data-window href="<?= url_to('/admin/accounts/edit/' . $character['account']) ?>"><?= $character['account'] ?></a></td>
+                                <td><a data-name="account<?= $character['account'] ?>" title="Usuário: <?= $character['account'] ?>" data-window data-window-height="500" href="<?= url_to('/admin/accounts/edit/' . $character['account']) ?>"><?= $character['account'] ?></a></td>
                                 <td><?= util('Time')->relative($character['connected_time'], 2, '') ?></td>
                                 <td><?= $character['ip'] ?></td>
                                 <td><?= $character['server_name'] ?></td>

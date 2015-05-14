@@ -54,6 +54,10 @@ return [
     'plugins' => [
     ],
 
+    'credit' => [
+        'column' => 'credit'
+    ],
+
     'coins' => [
     ],
 

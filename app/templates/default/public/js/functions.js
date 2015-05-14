@@ -107,7 +107,33 @@ $(function () {
 		}).on("pjax:complete", function (e) {
 			overlay.destroy();
 		});
-        
+
+    $(document).on("click", "[data-ajax-action]", function (e) {
+        var $this = $(this);
+
+        $.get($this.attr("href"), function (data) {
+
+            if (data.success) {
+                if (data.partial) {
+                    var $partial = $(".partial-" + data.partial);
+                    $partial.append('<div class="loading-partial"></div>');
+                    $.get(base + "partial/" + data.partial, function (html) {
+                        $partial.html(html);
+                    });
+                }
+
+                if (data.redirect) {
+                    $.pjax({url: base.substring(0, base.length - 1) + data.redirect, container: ".ajax-container", timeout:0});
+                }
+            } else {
+                notyfy({text: data.message, type: "error", timeout: 8000});
+            }
+
+        });
+
+        e.preventDefault();
+    });
+
     $(document).on("click", ".reload-captcha", function (e) {
         var $this = $(this);
         var $container = $this.closest(".captcha");
